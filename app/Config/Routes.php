@@ -50,3 +50,6 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 
 $routes->get('/login', 'Login::index');
 $routes->post('/login', 'Login::authenticate');
+
+$routes->get('/register', 'RegisterController::index');
+$routes->post('/register', 'RegisterController::store');
